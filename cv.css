@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 :root {
     --main-color: #002557;
+    --second-color: #efa575;
     --background-color: #5f86ce;
+    --main-font: 'Poppins';
+    --title-font: 'Nunito';
 }
 
 * {
@@ -97,22 +103,26 @@ body {
     position: relative;
     list-style: none;
     margin: 10px 0px;
-    cursor: pointer;
+    cursor: auto;
 }
 .personal-info ul li .icon, .contact-info ul li .icon{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: aquamarine;
+    color: var(--second-color);
 }
 .personal-info ul li span, .contact-info ul li span{
     color: #dafff3;
 }
+.contact-info ul li a {
+    text-decoration: none;
+    color: #dafff3;
+    cursor: pointer;
+}
 
 /*
-    =============================//=============================
+=========================== RIGHT SECTION ===========================
 */
-
 .container .right-side {
     position: relative;
     background: #ffffff;
@@ -143,13 +153,27 @@ body {
     position: relative;
     padding: 10px;
 }
+.experience-n p {
+    font-family: var(--main-font);
+}
+.experience-list {
+    list-style: circle;
+    padding: 5px;
+    margin-inline-start: 10px;
+}
+.experience-list li {
+    font-family: var(--main-font);
+}
+
 .time-period {
     padding: 5px;
     color: var(--main-color);
 }
-.job-position{
+.job-position, .degree {
     padding: 2px;
+    margin-bottom: 4px;
+    font-family: var(--title-font), sans-serif;
 }
-.company-name{
+.company-name, .school{
     margin-bottom: 10px;
 }
