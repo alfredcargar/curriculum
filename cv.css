@@ -1,0 +1,155 @@
+:root {
+    --main-color: #002557;
+    --background-color: #5f86ce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #ffffff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/*
+=========================== LEFT SECTION ===========================
+*/
+.container .left-side {
+        position: relative;
+        background: var(--main-color);
+        padding: 40px;
+    }
+
+.profile-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    /*separator line*/
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.profile-header .img-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-header .img-container img {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-header h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile-header span {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+
+.personal-info, contact-info{
+    padding-top: 10px;
+}
+
+.title{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.personal-info ul, .contact-info ul {
+    position: relative;
+    list-style: none;
+}
+.personal-info ul li, .contact-info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.personal-info ul li .icon, .contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aquamarine;
+}
+.personal-info ul li span, .contact-info ul li span{
+    color: #dafff3;
+}
+
+/*
+    =============================//=============================
+*/
+
+.container .right-side {
+    position: relative;
+    background: #ffffff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+.about:last-child {
+    margin-bottom: 0;
+}
+.section-title {
+    color: #ff6a00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/*work experience*/
+.experience-n {
+    position: relative;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--main-color);
+}
+.experience-n-last {
+    position: relative;
+    padding: 10px;
+}
+.time-period {
+    padding: 5px;
+    color: var(--main-color);
+}
+.job-position{
+    padding: 2px;
+}
+.company-name{
+    margin-bottom: 10px;
+}
