@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 :root {
     --main-color: #002557;
-    --second-color: #efa575;
+    --second-color: #eebb6a;
     --background-color: #5f86ce;
     --main-font: 'Poppins';
-    --title-font: 'Nunito';
+    --title-font: 'Montserrat';
+    --paragraph-title-font: 'Open Sans';
+    --paragraph-font: 'Nunito';
+    --entity-name-font: 'Source Sans Pro';
 }
 
 * {
@@ -83,17 +89,17 @@ body {
     font-weight: 100;
 }
 
-
 .personal-info, .contact-info, .tech-skills{
-    padding-top: 10px;
+    padding-top: 15px;
 }
-
 .title{
-    color: #ffffff;
+    color: var(--second-color) ;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 .personal-info ul, .contact-info ul, .tech-skills ul{
     position: relative;
@@ -109,9 +115,8 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: white;
+    color: var(--second-color);
 }
-
 .contact-info ul li span .fa-map-marker{
     padding-left: 3px;
 } /*to center the map icon*/
@@ -139,6 +144,7 @@ body {
 .about:last-child {
     margin-bottom: 0;
 }
+
 .section-title {
     color: #ff6a00;
     text-transform: uppercase;
@@ -157,16 +163,28 @@ body {
     position: relative;
     padding: 10px;
 }
-.experience-n p {
-    font-family: var(--main-font);
+.experience-n p{
+    font-family: var(--paragraph-font);
+}
+.experience-n-last p {
+    font-family: var(--paragraph-font);
 }
 .experience-list {
     list-style: circle;
     padding: 5px;
     margin-inline-start: 10px;
 }
+
 .experience-list li {
-    font-family: var(--main-font);
+   font-family: var(--paragraph-font);
+}
+
+.experience-content a {
+    text-decoration: none;
+    color: #069d00;
+}
+a:hover {
+    color: #002557;
 }
 
 .time-period {
@@ -176,16 +194,38 @@ body {
 .paragraph-title {
     padding: 2px;
     margin-bottom: 4px;
-    font-family: var(--title-font), sans-serif;
+    font-family: var(--paragraph-title-font), sans-serif;
 }
-.company-name, .school{
+.entity-name {
+    margin-bottom: 10px;
+    font-family: var(--entity-name-font);
+    font-size: 18px;
+}
+.location {
+    float: right;
+}
+.score {
     margin-bottom: 10px;
 }
 
 
 /*table*/
-table, th, td {
-    border: 1px solid black;
+#languages {
     border-collapse: collapse;
-    text-align: center;
+    font-family: var(--main-font), sans-serif;
+    width: 100%;
+}
+#languages td, #languages th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#languages tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#languages th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #c1812f;
+    color: white;
 }
