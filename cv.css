@@ -84,7 +84,7 @@ body {
 }
 
 
-.personal-info, contact-info{
+.personal-info, .contact-info, .tech-skills{
     padding-top: 10px;
 }
 
@@ -95,11 +95,11 @@ body {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-.personal-info ul, .contact-info ul {
+.personal-info ul, .contact-info ul, .tech-skills ul{
     position: relative;
     list-style: none;
 }
-.personal-info ul li, .contact-info ul li {
+.personal-info ul li, .contact-info ul li, .tech-skills ul li {
     position: relative;
     list-style: none;
     margin: 10px 0px;
@@ -109,9 +109,13 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: var(--second-color);
+    color: white;
 }
-.personal-info ul li span, .contact-info ul li span{
+
+.contact-info ul li span .fa-map-marker{
+    padding-left: 3px;
+} /*to center the map icon*/
+.personal-info ul li span, .contact-info ul li span, .tech-skills ul li span{
     color: #dafff3;
 }
 .contact-info ul li a {
@@ -169,11 +173,19 @@ body {
     padding: 5px;
     color: var(--main-color);
 }
-.job-position, .degree {
+.paragraph-title {
     padding: 2px;
     margin-bottom: 4px;
     font-family: var(--title-font), sans-serif;
 }
 .company-name, .school{
     margin-bottom: 10px;
+}
+
+
+/*table*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
 }
