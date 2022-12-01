@@ -196,6 +196,13 @@ a:hover {
     margin-bottom: 4px;
     font-family: var(--paragraph-title-font), sans-serif;
 }
+.paragraph-title-others {
+    padding: 2px;
+    margin-bottom: 6px;
+    font-family: var(--paragraph-title-font), sans-serif;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+}
 .entity-name {
     margin-bottom: 10px;
     font-family: var(--entity-name-font);
@@ -228,4 +235,12 @@ a:hover {
     text-align: left;
     background-color: #c1812f;
     color: white;
+}
+
+
+/*todo responsiveness*/
+@media screen and (max-width: 700px) {
+    .left-side {
+        display: none;
+    }
 }
