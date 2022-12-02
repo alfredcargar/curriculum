@@ -238,7 +238,7 @@ a:hover {
 }
 
 
-/*todo responsiveness*/
+/*TODO responsiveness*/
 @media screen and (max-width: 700px) {
     .left-side {
         display: none;
