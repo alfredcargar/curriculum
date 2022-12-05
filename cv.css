@@ -239,8 +239,27 @@ a:hover {
 
 
 /*TODO responsiveness*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .left-side {
+        display: none;
+    }
+
+    table {
+        display: none;
+    }
+
+    .location {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .city-mobile {
+        display:none;
+    }
+
+    .language-mobile {
         display: none;
     }
 }
