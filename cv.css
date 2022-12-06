@@ -133,9 +133,9 @@ body {
 =========================== RIGHT SECTION ===========================
 */
 .container .right-side {
-    position: relative;
+    /*position: relative;*/
     background: #ffffff;
-    padding: 40px;
+    padding: 25px;
 }
 
 .about {
@@ -251,6 +251,15 @@ a:hover {
     .location {
         display: none;
     }
+    .container, .right-side{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-title {
+        text-align: left;
+    }
 
 }
 
@@ -261,5 +270,9 @@ a:hover {
 
     .language-mobile {
         display: none;
+    }
+
+    .container, .right-side {
+
     }
 }
