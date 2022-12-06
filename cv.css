@@ -162,6 +162,7 @@ body {
 .experience-n-last {
     position: relative;
     padding: 10px;
+    overflow-x: auto;
 }
 .experience-n p{
     font-family: var(--paragraph-font);
@@ -244,9 +245,9 @@ a:hover {
         display: none;
     }
 
-    table {
+   /* table {
         display: none;
-    }
+    }*/
 
     .location {
         display: none;
