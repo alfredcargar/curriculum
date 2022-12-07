@@ -9,10 +9,10 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("sidenav").style.width = "280px";
         }
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("sidenav").style.width = "0";
         }
     </script>
 
@@ -92,9 +92,56 @@
         <div class="right-side">
 
             <!--sidebar button-->
-            <div class="sidebar-button">
-                <div id="mySidenav" class="sidenav">
+            <div class="sidebar-container">
+                <div id="sidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <div class="sidebar-header">
+                        <div class="sidebar-img">
+                            <img src="./img/alfredo.png" />
+                        </div>
+                        <h2> Alfredo Carbonari Garcia<br /><span class="subtitle">Developer</span></h2>
+                    </div>
+
+                    <div class="personal-info">
+                        <h3 class="title">Personal Info</h3>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-birthday-cake"></i></span>
+                                <span class="text">02/10/1993</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-globe"></i></span>
+                                <span class="text">italian, spanish</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="title">Contact Info</h3>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                <span class="text">Madrid, Spain</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-phone-square"></i></span>
+                                <span class="text">+34 651 13 66 92</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-envelope-square"></i></span>
+                                <span class="text">alfredcgarcia@outlook.com</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-github-square"></i></span>
+                                <span class="text">alfredcargar</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-linkedin-square"></i></span>
+                                <span class="text">alfredo-carbonari-garcia</span>
+                            </li>
+                        </ul>
+                    </div>
+
                     <a href="#work">Work</a>
                     <a href="#education">Education</a>
                     <a href="#languages">Languages</a>
@@ -102,7 +149,7 @@
                 </div>
 
 
-                <!-- Use any element to open the sidenav -->
+                <!-- the button -->
                 <div class="hamburger-div">
                     <span onclick="openNav()">&#9776;</span>
                 </div>
