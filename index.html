@@ -10,9 +10,13 @@
     <script>
         function openNav() {
             document.getElementById("sidenav").style.width = "280px";
+            document.getElementById("closebtn").style.display = "block";
+            document.getElementById("closebtn").style.zIndex = "1";
         }
         function closeNav() {
             document.getElementById("sidenav").style.width = "0";
+            document.getElementById("closebtn").style.display = "none";
+            document.getElementById("closebtn").style.zIndex = "0";
         }
     </script>
 
@@ -93,8 +97,13 @@
 
             <!--sidebar button-->
             <div class="sidebar-container">
+
                 <div id="sidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <div class="close-div">
+                        <span id="closebtn" class="closebtn" onclick="closeNav()">&times;</span>
+                    </div>
 
                     <div class="sidebar-header">
                         <div class="sidebar-img">
@@ -131,21 +140,33 @@
                                 <span class="icon"><i class="fa fa-envelope-square"></i></span>
                                 <span class="text">alfredcgarcia@outlook.com</span>
                             </li>
+
                             <li>
                                 <span class="icon"><i class="fa fa-github-square"></i></span>
-                                <span class="text">alfredcargar</span>
+                                <a href="https://github.com/alfredcargar">alfredcargar</a>
                             </li>
                             <li>
                                 <span class="icon"><i class="fa fa-linkedin-square"></i></span>
-                                <span class="text">alfredo-carbonari-garcia</span>
+                                <a href="https://www.linkedin.com/in/alfredo-carbonari-garcia/">alfredo-carbonari-garcia</a>
                             </li>
                         </ul>
                     </div>
 
-                    <a href="#work">Work</a>
-                    <a href="#education">Education</a>
-                    <a href="#languages">Languages</a>
-                    <a href="#technologies">Technologies</a>
+                    <div class="tech-skills">
+                        <h3 class="title">Technologies</h3>
+                        <ul>
+                            <li style="padding: 18px;"><span class="text">Java (J2EE, Spring Boot),
+                                Maven,
+                                SQL (MySQL, PostgreSQL),
+                                Git, Jenkins, HTML, CSS, JavaScript, Batch/Shell, Python, Matlab/Octave
+                                </span></li>
+                        </ul>
+                    </div>
+
+                    <a class="sections" href="#work">Work</a>
+                    <a class="sections" href="#education">Education</a>
+                    <a class="sections" href="#languages">Languages</a>
+                    <a class="sections" href="#technologies">Technologies</a>
                 </div>
 
 
@@ -166,13 +187,13 @@
                         <span class="location"><span style="padding:5px;"><i class="fa fa-map-marker"></i></span>Madrid, Spain</span>
                     </h4>
                     <p class="experience-content">
-                        External Java Developer in Indra for a project involving developing applications for the EPO (European Patent Office). Among my functions:
+                        External Java Developer in Indra for a project involving developing applications for the EPO (European Patent Office). Among my functions and the technologies used:
                         <ul class="experience-list">
-                            <li>Develop and maintainment of Java applications, mostly web REST services and other standalone GUI applications, using technologies such as J2EE, JBoss (Wildfly) and Maven.</li>
+                            <li>Developement and maintainance of Java applications, mostly web REST services and other standalone GUI applications. For this purpose I've worked with JEE, JSP (including HTML, CSS and JS), EJB, JPA, Maven and WildFly (JBoss).</li>
                             <li>
                                 Version control and deployment using Bitbucket and Jenkins.
                             </li>
-                            <li>Organization through Agile and SCRUM methodologies using Jira.</li>
+                            <li>Organization of work through Agile and SCRUM methodologies using Jira.</li>
                             <li>Control and maintainance of the remote Windows and Linux Servers where some applications were running.</li>
                             <li>Scheduling of tasks remotely with UAC Stonebranch, including batch and shell scripting and organization of workflows.</li>
                         </ul>

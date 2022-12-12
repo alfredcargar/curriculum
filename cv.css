@@ -292,7 +292,6 @@ a:hover {
     padding: 20px;
 }
 
-/*TODO responsiveness*/
 @media screen and (max-width: 800px) {
 
     .left-side {
@@ -331,6 +330,12 @@ a:hover {
         cursor: pointer;
         position: absolute;
     }
+    .close-div span {
+        color: lightgrey;
+        cursor: pointer;
+        position: absolute;
+    }
+    
 
 }
 
@@ -366,7 +371,7 @@ a:hover {
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a.sections {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -382,9 +387,10 @@ a:hover {
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
-  right: 25px;
+  left: 180px;
   font-size: 36px;
   margin-left: 50px;
 }
