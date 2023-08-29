@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfredo CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: #ada49c;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+    }
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .info h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #222;
+    }
+    .info h2 {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #5c4a32;
+    }
+    .contact {
+      font-size: 14px;
+      color: #555;
+    }
+    .contact ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: auto;
+    }
+    .contact li {
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .contact li i {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .main .left {
+      flex: 2;
+      padding: 20px;
+      margin-right: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .main .right {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    h3 {
+      margin: 0 0 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+      font-size: 20px;
+      color: #333;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #444;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="profile-picture">
+        <img src="./img/alfredo.png" alt="Profile Picture">
+      </div>
+      <div class="info">
+        <h1>Alfredo Carbonari García</h1>
+        <h2>Desarrollador Software</h2>
+      </div>
+    </div>
+    <div class="contact">
+      <ul>
+        <li><i class="fas fa-envelope"></i>alfredcgarcia@outlook.com</li>
+        <li><i class="fas fa-phone"></i> +34 651 13 66 92</li>
+        <li><i class="fas fa-globe"></i>www.github.com/alfredcgarcia</li>
+        <li><i class="fab fa-linkedin"></i>https://www.linkedin.com/in/alfredo-carbonari-garcia/</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="left">
+        <h3>Perfil</h3>
+        <p>Motivado por el interes en la musica y las tecnologias, he investigado varios aspectos del desarrollo software y sus implementaciones audio cuales: analisis acustica y simulación de espacios virtuales, DSP, HRTF. Me gustaría seguir por este camino e integrar mi experiencia profesional con mi curiosidad sobre estos ambitos.</p>
+
+
+        <h3>Experiencia Laboral</h3>
+        <p><strong>Desarrollador - General Software (CRIDA)</strong>
+          <br><strong>Madrid</strong>
+          <br>Marzo 2023 - Presente</p>
+        <p>Desarrollador externo en Crida, empresa de Enaire dedicada a la investigación, innovación y desarrollo de productos especializados en el analisis del trafico aéreo.
+        <br>Con la principal función de desarrollador software, tuve la oportunidad de trabajar en aplicaciones que se sirven de inteligencia artificial para predecir el trafico por rutas y areas de control, utilizando modelos entrenados en Python y aplicandolos en Java mediante modelos predictivos (PMML).<br>
+        Desarrollo backend con Java y base de datos Microsoft SQL Server, análisis y optimización de código, pruebas unitarias y documentación técnica del software. Durante este periodo tuve también la oportunidad de seguir formaciones sobre conceptos de ingenieria aeroespacial ofrecidos por CRIDA.
+
+        <p><strong>Desarrollador - Aktios Digital Services SL (INDRA)</strong>
+          <br><strong>Madrid</strong>
+          <br>Abril 2022 - Septiembre 2022</p>
+        <p>Desarrollador Java externo en Indra, en su proyecto de mantenimiento y desarrollo de aplicaciones en el European Patent Office (EPO), con sede en Munich.<br>
+        Trabajé en aplicaciones para uso interno, principalmente aplicaciones web utilizantes servicios REST, pero también otras standalone con GUI. Entre las tecnologias utilizadas: Java 8, JavaEE, EJB, JPA, Maven, Wildfly y Jenkins.<br>
+        Integración de datos con la aplicación UAC Stonebranch, con la cual creaba y programaba la ejecucion de tareas remotas de vario tipo, con el apoyo de scripts batch y shell dependiendo del servidor.<br>
+        Organización del trabajo con metodologias Agíl y SCRUM con utilizo de Jira y en sprints de 30 días.
+
+        <p><strong>Desarrollador Backend - Dedicated Italia Srl</strong>
+          <br><strong>Padova, Italia</strong>
+          <br>Noviembre 2020 - Enero 2022
+        </p>
+        <p>Programador Java para plataforma con arquitectura de microservicios, especializados en el área de Electronic Document Interchange (EDI) y con clientes principales en el sector automotriz y moda. La plataforma que ayudé a desarrollar gestionaba documentación B2B, solucionando el problema de empresas que usan distintos formatos para este tipo de documentos comerciales además de la necesidad de enviar en forma automatica grandes cantidades de ficheros, lo cual gestionabamos principalmente con protocolos FTP.<br>
+        Entre mis funciones:<br>
+         - Desarrollo Java<br>
+         - Consultas y mantenimiento BBDD MySQL<br>
+         - Revisión documentos EDI/SAP (edifact, idoc, csv, etc,)<br>
+         - Atención al cliente y/o socios<br>
+       </p>
+
+         <p><strong>Empleado e-commerce, Centernet Italia Srl</strong>
+          <br><strong>Venecia, Italia</strong>
+          <br>Septiembre 2015 - Junio 2016
+        </p>
+        <p>Intermediario entre clientes, almacén y empresa (OVS) en su nueva abertura al extranjero (en España). Soporte y atención al cliente sobre varios temas de la pagina web.<br>
+
+        </p>
+
+        <h3>Estudios</h3>
+        <p><strong>Grado en Sonología (104/110)</strong>
+          <br><strong>Conservatorio C. Pollini, Padova (Italia)</strong>
+          <br>2016 - 2020
+        <p>Acústica, psicoacústica, procesado digital de la señal, programación orientada al audio y multimedia, además de cursos de armonía y composición tradicionales. Gradué con una tesis sobre la creación de acusticas virtuales, cuyo codigo se encuentra en mi repositorio: https://github.com/alfredcargar/Acoustics
+        <br>Durante mis estudios también tuve la oportunidad de trabajar en el entero proceso de producción musical de orquestas con músicos e ingenieros cuales: Marco Lincetto, Alvise Vidolin, Nicola Bernardini, Claudio Ambrosini.</p>
+
+        <p><strong>Bachillerato</strong>
+          <br><strong>ITC G. Parini, Venecia (Italia)</strong>
+          <br>2007 - 2013
+        <p>Bachiller económico-comercial, enfoque en economía y administración de la empresa.  </p>
+
+      </div>
+      <div class="right">
+        <h3>Tecnologías</h3>
+        <ul>
+          <li>Git</li>
+          <li>Maven</li>
+          <li>Spring</li>
+          <li>JEE</li>
+          <li>JUnit, Mockito</li>
+          <li>WildFly</li>
+          <li>Tomcat</li>
+          <li>Jenkins</li>
+          <li>Aplicaciones Web</li>
+          <li>Aplicaciones para la integración de datos</li>
+        </ul>
+        <h3>Lenguajes</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Matlab</li>
+          <li>C++</li>
+          <li>SQL</li>
+          <li>HTML, CSS, Javascript</li>
+        </ul>
+        <h3>Idiomas</h3>
+        <ul>
+          <li>Italiano (nativo)</li>
+          <li>Español (nativo)</li>
+          <li>Inglés (C2)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
