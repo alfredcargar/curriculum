@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Quicksand&family=Raleway:wght@200;600&display=swap');
+
 :root {
   --main-color: /*#ada49c*/ #d4beba;
   --secondary-color: ;
   --header-font:'Raleway';
   --section-title-font: 'Kanit';
+  --role-title-font: 'Raleway';
+  --job-period: 'Quicksand';
 }
-
 body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -90,6 +93,9 @@ body {
       margin-right: 5px;
       font-size: 12px;
     }
+
+    /*** SUMMARY, EXPERIENCES ETC. ***/
+
     .main {
       display: flex;
       flex-wrap: wrap;
@@ -102,6 +108,42 @@ body {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
     }
+    .left .fa {
+      padding-right: 5px;
+    }
+    .left p {
+      margin-bottom: 25px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* EXPERIENCE N */
+    .job-position {
+      font-family: var(--role-title-font);
+      margin-top: 2px;
+      margin-bottom: 4px;
+    }
+    .entity-name {
+      font-family: var(--role-title-font);
+      margin: 0;
+    }
+    .job-location {
+      float: right;
+      font-size: 12px;
+      padding-right: 15px;
+    }
+    .job-time{
+      font-family: var(--job-period);
+      font-size: 14px;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      margin-top: 0px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    /*** SIDE SECTION ***/
+
     .main .right {
       flex: 1;
       padding: 20px;
@@ -115,11 +157,11 @@ body {
     h1 {
       font-size: 36px;
     }
-    h3 {
+    h2 {
       margin: 0 0 15px;
       padding-bottom: 5px;
       border-bottom: 1px solid #ccc;
-      font-size: 20px;
+      font-size: 21px;
       font-family: var(--section-title-font);
       text-transform: uppercase;
       color: #333;
@@ -133,9 +175,4 @@ body {
       margin-bottom: 5px;
       font-size: 16px;
       color: #444;
-    }
-    .left p {
-      margin-bottom: 20px;
-      font-size: 15px;
-      color: #555;
     }
